@@ -2864,8 +2864,8 @@
   "78153": {
     "name": "Casper Brix",
     "email": "casperbrix1@gmail.com",
-    "status": "expired",
-    "last_updated": "2026-01-26 14:16:51.630354"
+    "status": "extended",
+    "last_updated": "2026-01-26 17:49:22.530298"
   },
   "78154": {
     "name": "kevin",
@@ -6980,8 +6980,8 @@
   "78856": {
     "name": "internal-test-autoob",
     "email": "internal-test-autoob@prisync.c...",
-    "status": "test",
-    "last_updated": "2026-01-26 14:16:51.633572"
+    "status": "expired",
+    "last_updated": "2026-01-26 17:49:22.530679"
   },
   "78857": {
     "name": "No Promo Code Needed!",
@@ -7058,8 +7058,8 @@
   "78869": {
     "name": "360 SUPPLY",
     "email": "ryan@360supply.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.633603"
+    "status": "extended",
+    "last_updated": "2026-01-26 17:49:22.530752"
   },
   "78870": {
     "name": "jazmine nicandro",
@@ -7922,8 +7922,8 @@
   "79018": {
     "name": "p.a.v.ay.or402",
     "email": "p.a.v.ay.or402@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.633985"
+    "status": "expired",
+    "last_updated": "2026-01-26 17:49:22.530955"
   },
   "79019": {
     "name": "Blizzard AI",
@@ -11396,8 +11396,8 @@
   "79599": {
     "name": "ceren-ismine-control-2101",
     "email": "ceren-ismine-control-2101@gmai...",
-    "status": "in_demo",
-    "last_updated": "2026-01-26 14:27:54.884189"
+    "status": "in_trial",
+    "last_updated": "2026-01-26 17:49:22.531328"
   },
   "79600": {
     "name": "ceren-ismine-control-2101-2",
@@ -11998,5 +11998,29 @@
     "email": "ctek-de@prisync.com",
     "status": "in_trial",
     "last_updated": "2026-01-26 14:16:51.635722"
+  },
+  "79700": {
+    "name": "Habib Ahechmoud",
+    "email": "ahechmoudhabib@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-26 17:49:22.531399"
+  },
+  "79701": {
+    "name": "Remigijus M",
+    "email": "remigijus@aromawest.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-26 17:49:22.531405"
+  },
+  "79702": {
+    "name": "Royalsperfume",
+    "email": "info@royalsperfume.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-26 17:49:22.531409"
+  },
+  "79703": {
+    "name": "Royal Spirit",
+    "email": "royalspirit001@gmail.com",
+    "status": "uninstalled",
+    "last_updated": "2026-01-26 17:49:22.531413"
   }
 }
