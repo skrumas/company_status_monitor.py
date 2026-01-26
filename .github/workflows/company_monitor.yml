@@ -2,7 +2,7 @@ name: Company Status Monitor
 
 on:
   schedule:
-    # 10 saatte bir çalıştır (0. dakikada)
+    # 2 saatte bir çalıştır (0. dakikada)
     - cron: '0 */2 * * *'
   workflow_dispatch:
 
