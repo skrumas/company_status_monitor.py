@@ -7934,26 +7934,26 @@
   "79020": {
     "name": "Peligro Sports",
     "email": "info@peligrosportsnyc.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.633990"
+    "status": "expired",
+    "last_updated": "2026-01-26 20:02:37.317272"
   },
   "79021": {
     "name": "İlayda Bakırlı",
     "email": "ilydbkrl05@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.633993"
+    "status": "expired",
+    "last_updated": "2026-01-26 20:02:37.317311"
   },
   "79022": {
     "name": "bodyworksbyjoe",
     "email": "bodyworksbyjoe@yahoo.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.633995"
+    "status": "expired",
+    "last_updated": "2026-01-26 20:02:37.317376"
   },
   "79023": {
     "name": "mstknt",
     "email": "mstknt@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.633997"
+    "status": "expired",
+    "last_updated": "2026-01-26 20:02:37.317425"
   },
   "79024": {
     "name": "sales",
@@ -12022,5 +12022,11 @@
     "email": "royalspirit001@gmail.com",
     "status": "uninstalled",
     "last_updated": "2026-01-26 17:49:22.531413"
+  },
+  "79704": {
+    "name": "devtest",
+    "email": "mustrunet@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-26 20:02:37.317745"
   }
 }
