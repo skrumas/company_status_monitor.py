@@ -5078,8 +5078,8 @@
   "78536": {
     "name": "team",
     "email": "team@voyageluggage.com",
-    "status": "extended",
-    "last_updated": "2026-01-26 14:16:51.631310"
+    "status": "expired",
+    "last_updated": "2026-01-27 14:07:51.042981"
   },
   "78537": {
     "name": "nytra.filip",
@@ -8072,14 +8072,14 @@
   "79043": {
     "name": "Artur Leandro",
     "email": "aarturleandro@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634049"
+    "status": "expired",
+    "last_updated": "2026-01-27 14:07:51.043386"
   },
   "79044": {
     "name": "kateryna.zharikova",
     "email": "kateryna.zharikova@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634051"
+    "status": "expired",
+    "last_updated": "2026-01-27 14:07:51.043421"
   },
   "79045": {
     "name": "barcin-internal-test",
@@ -12038,8 +12038,8 @@
   "79706": {
     "name": "hviitala",
     "email": "hviitala@highwayandheavyparts....",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 22:02:10.372809"
+    "status": "expired",
+    "last_updated": "2026-01-27 14:07:51.043955"
   },
   "79707": {
     "name": "hviitala",
@@ -12136,5 +12136,11 @@
     "email": "nkauntz@gmail.com",
     "status": "in_trial",
     "last_updated": "2026-01-27 12:02:27.626616"
+  },
+  "79723": {
+    "name": "paganguncesi",
+    "email": "paganguncesi@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 14:07:51.043971"
   }
 }
