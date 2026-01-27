@@ -8012,8 +8012,8 @@
   "79033": {
     "name": "furkan.aktunc",
     "email": "furkan.aktunc@ecoofis.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634022"
+    "status": "expired",
+    "last_updated": "2026-01-27 10:03:25.597650"
   },
   "79034": {
     "name": "robert.wisely",
@@ -8024,14 +8024,14 @@
   "79035": {
     "name": "contact",
     "email": "contact@expertiselavageauto.fr",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634027"
+    "status": "expired",
+    "last_updated": "2026-01-27 10:03:25.597717"
   },
   "79036": {
     "name": "jennyleayre",
     "email": "jennyleayre@hotmail.co.uk",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634030"
+    "status": "expired",
+    "last_updated": "2026-01-27 10:03:25.597764"
   },
   "79037": {
     "name": "EXPERTISE LAVAGE AUTO FRANCE",
@@ -8042,14 +8042,14 @@
   "79038": {
     "name": "gian",
     "email": "gian@konnectlearning.com.au",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634036"
+    "status": "expired",
+    "last_updated": "2026-01-27 10:03:25.597827"
   },
   "79039": {
     "name": "madeleine.lavery",
     "email": "madeleine.lavery@hgcapital.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634038"
+    "status": "expired",
+    "last_updated": "2026-01-27 10:03:25.597878"
   },
   "79040": {
     "name": "Ailton Silva",
@@ -11942,8 +11942,8 @@
   "79690": {
     "name": "Mamm.ch",
     "email": "albinot.elezi@mamm.ch",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.635702"
+    "status": "uninstalled",
+    "last_updated": "2026-01-27 10:03:25.598263"
   },
   "79691": {
     "name": "GEYOTO Official Store",
@@ -12106,5 +12106,23 @@
     "email": "ionut.petrisor@ruris.ro",
     "status": "in_trial",
     "last_updated": "2026-01-27 08:02:21.971853"
+  },
+  "79718": {
+    "name": "Navodaya SEO",
+    "email": "seonavodaya@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 10:03:25.598291"
+  },
+  "79719": {
+    "name": "Vidhey Raghuwanshi",
+    "email": "vraghuwanshi@g2.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 10:03:25.598295"
+  },
+  "79720": {
+    "name": "AV shop",
+    "email": "order@aligvarom.hu",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 10:03:25.598299"
   }
 }
