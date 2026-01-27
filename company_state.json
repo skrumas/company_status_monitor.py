@@ -7994,8 +7994,8 @@
   "79030": {
     "name": "gabriel.cernea",
     "email": "gabriel.cernea@ruris.ro",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634015"
+    "status": "expired",
+    "last_updated": "2026-01-27 06:02:22.876397"
   },
   "79031": {
     "name": "ebebek",
@@ -12088,5 +12088,11 @@
     "email": "kdensmore@focusbrands.com",
     "status": "in_trial",
     "last_updated": "2026-01-27 04:18:54.767300"
+  },
+  "79715": {
+    "name": "pcross",
+    "email": "pcross@cocacolaflorida.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 06:02:22.876855"
   }
 }
