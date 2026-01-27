@@ -8108,14 +8108,14 @@
   "79049": {
     "name": "maarcin.s",
     "email": "maarcin.s@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634063"
+    "status": "expired",
+    "last_updated": "2026-01-27 21:03:09.502146"
   },
   "79050": {
     "name": "franklin",
     "email": "franklin@swiftronics.tech",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634065"
+    "status": "expired",
+    "last_updated": "2026-01-27 21:03:09.502211"
   },
   "79051": {
     "name": "The Harbour Chandler",
@@ -8126,26 +8126,26 @@
   "79052": {
     "name": "afm",
     "email": "afm@bici.cc",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634070"
+    "status": "expired",
+    "last_updated": "2026-01-27 21:03:09.502283"
   },
   "79053": {
     "name": "afrei",
     "email": "afrei@blofficesupplies.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634072"
+    "status": "expired",
+    "last_updated": "2026-01-27 21:03:09.502331"
   },
   "79054": {
     "name": "Ink Genie",
     "email": "info@inkgenie.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634075"
+    "status": "paid",
+    "last_updated": "2026-01-27 21:03:09.502376"
   },
   "79055": {
     "name": "jamie.kingston",
     "email": "jamie.kingston@broncos.nfl.net",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634077"
+    "status": "expired",
+    "last_updated": "2026-01-27 21:03:09.502423"
   },
   "79056": {
     "name": "yorvallo",
@@ -8384,8 +8384,8 @@
   "79095": {
     "name": "FrenchBeautyHub",
     "email": "business@frenchbeautyhub.com",
-    "status": "uninstalled",
-    "last_updated": "2026-01-26 14:16:51.634183"
+    "status": "in_trial",
+    "last_updated": "2026-01-27 21:03:09.502499"
   },
   "79096": {
     "name": "Brilho Trendsi",
@@ -12196,5 +12196,17 @@
     "email": "info@lovetiki.com",
     "status": "in_trial",
     "last_updated": "2026-01-27 18:03:43.865068"
+  },
+  "79733": {
+    "name": "افغان آشنا ډيجيټل بازار موندل او علانات",
+    "email": "webashna@gmail.com",
+    "status": "uninstalled",
+    "last_updated": "2026-01-27 21:03:09.502886"
+  },
+  "79734": {
+    "name": "k.ziegler",
+    "email": "k.ziegler@imaonline.de",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 21:03:09.502893"
   }
 }
