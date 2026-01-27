@@ -8120,8 +8120,8 @@
   "79051": {
     "name": "The Harbour Chandler",
     "email": "matt@harbourchandler.ca",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634068"
+    "status": "uninstalled",
+    "last_updated": "2026-01-27 18:03:43.864668"
   },
   "79052": {
     "name": "afm",
@@ -12184,5 +12184,17 @@
     "email": "matt.stent@allisonbaby.co.uk",
     "status": "in_trial",
     "last_updated": "2026-01-27 16:04:08.240099"
+  },
+  "79731": {
+    "name": "asvetlo92",
+    "email": "asvetlo92@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 18:03:43.865058"
+  },
+  "79732": {
+    "name": "Love Tiki",
+    "email": "info@lovetiki.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 18:03:43.865068"
   }
 }
