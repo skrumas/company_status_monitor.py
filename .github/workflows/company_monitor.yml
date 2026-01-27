@@ -2,8 +2,8 @@ name: Company Status Monitor
 
 on:
   schedule:
-    # 2 saatte bir çalıştır (0. dakikada)
-    - cron: '0 */2 * * *'
+    # 1 saatte bir çalıştır (0. dakikada)
+    - cron: '0 */1 * * *'
   workflow_dispatch:
 
 # Bu blok, aynı anda birden fazla kopyanın çalışmasını engeller.
