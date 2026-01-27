@@ -180,10 +180,23 @@ class SlackNotifier:
                 for item in batch:
                     if item['type'] == 'CHANGE':
                         c = item['data']
-                        message_text += f"🔄 *Status Change*: {c['name']} (ID: {c['id']})\n"
+                        new_status = c['new'].lower() # Küçük harfe çevirip kontrol edelim
+                        
+                        # --- Emoji Mantığı ---
+                        if 'paid' in new_status:
+                            status_icon = "🎉 :partying_face:" # Kutlama
+                        elif 'churned' in new_status or 'uninstalled' in new_status:
+                            status_icon = "📉 :cry:" # Üzgün/Kayup
+                        else:
+                            status_icon = "🔄" # Standart değişim
+                        # ---------------------
+
+                        message_text += f"{status_icon} *Status Change*: {c['name']} (ID: {c['id']})\n"
                         message_text += f"   ❌ Old: {c['old']}  ➡  ✅ New: *{c['new']}*\n\n"
+
                     elif item['type'] == 'NEW':
                         c = item['data']
+                        # İstersen yeni gelen 'Paid' müşteriler için de buraya benzer mantık ekleyebilirsin
                         message_text += f"✨ *New Company*: {c['name']} (ID: {c['id']})\n"
                         message_text += f"   Status: {c['status']}\n\n"
                 
