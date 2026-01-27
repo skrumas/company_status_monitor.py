@@ -2864,8 +2864,8 @@
   "78153": {
     "name": "Casper Brix",
     "email": "casperbrix1@gmail.com",
-    "status": "extended",
-    "last_updated": "2026-01-26 17:49:22.530298"
+    "status": "paid",
+    "last_updated": "2026-01-27 12:02:27.625556"
   },
   "78154": {
     "name": "kevin",
@@ -6392,8 +6392,8 @@
   "78758": {
     "name": "elvan-test-casper",
     "email": "elvan-test-casper@prisync.com",
-    "status": "expired",
-    "last_updated": "2026-01-26 14:16:51.631851"
+    "status": "paid",
+    "last_updated": "2026-01-27 12:02:27.625917"
   },
   "78759": {
     "name": "elcivolkan",
@@ -7136,8 +7136,8 @@
   "78883": {
     "name": "meltem.burma",
     "email": "meltem.burma@boyner.com.tr",
-    "status": "extended",
-    "last_updated": "2026-01-26 14:16:51.633635"
+    "status": "expired",
+    "last_updated": "2026-01-27 12:02:27.626048"
   },
   "78884": {
     "name": "g-ti",
@@ -8054,20 +8054,20 @@
   "79040": {
     "name": "Ailton Silva",
     "email": "ailton@fashionjet.ai",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634041"
+    "status": "expired",
+    "last_updated": "2026-01-27 12:02:27.626166"
   },
   "79041": {
     "name": "h.paskov",
     "email": "h.paskov@palltex.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634044"
+    "status": "expired",
+    "last_updated": "2026-01-27 12:02:27.626222"
   },
   "79042": {
     "name": "Georgi Dimitrov",
     "email": "gr.dimitrov.palltex@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634046"
+    "status": "expired",
+    "last_updated": "2026-01-27 12:02:27.626271"
   },
   "79043": {
     "name": "Artur Leandro",
@@ -12124,5 +12124,17 @@
     "email": "order@aligvarom.hu",
     "status": "in_trial",
     "last_updated": "2026-01-27 10:03:25.598299"
+  },
+  "79721": {
+    "name": "TEHIT",
+    "email": "ozbej.pori@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 12:02:27.626611"
+  },
+  "79722": {
+    "name": "nkauntz",
+    "email": "nkauntz@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 12:02:27.626616"
   }
 }
