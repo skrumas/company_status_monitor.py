@@ -8006,8 +8006,8 @@
   "79032": {
     "name": "ghaplamaster",
     "email": "ghaplamaster@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634020"
+    "status": "expired",
+    "last_updated": "2026-01-27 07:04:00.159497"
   },
   "79033": {
     "name": "furkan.aktunc",
@@ -12094,5 +12094,11 @@
     "email": "pcross@cocacolaflorida.com",
     "status": "in_trial",
     "last_updated": "2026-01-27 06:02:22.876855"
+  },
+  "79716": {
+    "name": "gehadmarey47",
+    "email": "gehadmarey47@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 07:04:00.160042"
   }
 }
