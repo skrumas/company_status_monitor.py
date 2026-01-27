@@ -8102,8 +8102,8 @@
   "79048": {
     "name": "igpak12",
     "email": "igpak12@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634061"
+    "status": "expired",
+    "last_updated": "2026-01-27 16:04:08.239628"
   },
   "79049": {
     "name": "maarcin.s",
@@ -12142,5 +12142,47 @@
     "email": "paganguncesi@gmail.com",
     "status": "in_trial",
     "last_updated": "2026-01-27 14:07:51.043971"
+  },
+  "79724": {
+    "name": "Casey Jacuzzi",
+    "email": "casey.jacuzzi@iprovweb.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 16:04:08.240081"
+  },
+  "79725": {
+    "name": "cesar",
+    "email": "cesar@ferramaq.pt",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 16:04:08.240087"
+  },
+  "79726": {
+    "name": "Naveena Kalyan",
+    "email": "naveenakalyan43@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 16:04:08.240090"
+  },
+  "79727": {
+    "name": "Saranghae | Korean Skincare",
+    "email": "admin@saranghae.ch",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 16:04:08.240092"
+  },
+  "79728": {
+    "name": "xeniadono",
+    "email": "xeniadono@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 16:04:08.240094"
+  },
+  "79729": {
+    "name": "info",
+    "email": "info@letzkick.dk",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 16:04:08.240097"
+  },
+  "79730": {
+    "name": "matt.stent",
+    "email": "matt.stent@allisonbaby.co.uk",
+    "status": "in_trial",
+    "last_updated": "2026-01-27 16:04:08.240099"
   }
 }
