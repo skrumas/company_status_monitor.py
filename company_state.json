@@ -8162,14 +8162,14 @@
   "79058": {
     "name": "MD Hasan Patwary",
     "email": "patwary6am@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634084"
+    "status": "expired",
+    "last_updated": "2026-01-28 03:33:47.886664"
   },
   "79059": {
     "name": "zhen",
     "email": "zhen@cloudorder.us",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634087"
+    "status": "expired",
+    "last_updated": "2026-01-28 03:33:47.886751"
   },
   "79060": {
     "name": "Axel Trompeter",
@@ -12220,5 +12220,11 @@
     "email": "mericyildirim588@gmail.com",
     "status": "in_trial",
     "last_updated": "2026-01-28 00:14:51.902066"
+  },
+  "79737": {
+    "name": "gaofan wang",
+    "email": "wanggaofan0610@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 03:33:47.887270"
   }
 }
