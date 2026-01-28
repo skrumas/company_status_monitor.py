@@ -3266,8 +3266,8 @@
   "78221": {
     "name": "VETOVEN TIENDA",
     "email": "riosecoclinicaveterinaria@gmai...",
-    "status": "paid",
-    "last_updated": "2026-01-26 14:16:51.630518"
+    "status": "uninstalled",
+    "last_updated": "2026-01-28 09:10:21.718007"
   },
   "78222": {
     "name": "Bruno H",
@@ -8186,8 +8186,8 @@
   "79062": {
     "name": "gaelle",
     "email": "gaelle@mylittleroom.ch",
-    "status": "expired",
-    "last_updated": "2026-01-28 06:07:19.334609"
+    "status": "extended",
+    "last_updated": "2026-01-28 09:10:21.718625"
   },
   "79063": {
     "name": "Seneka Ravi",
@@ -8198,14 +8198,14 @@
   "79064": {
     "name": "Varsha Elza",
     "email": "elzavarsha@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634111"
+    "status": "expired",
+    "last_updated": "2026-01-28 09:10:21.718691"
   },
   "79065": {
     "name": "solerjohnrey29",
     "email": "solerjohnrey29@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634113"
+    "status": "expired",
+    "last_updated": "2026-01-28 09:10:21.718745"
   },
   "79066": {
     "name": "gmckeone",
@@ -12250,5 +12250,17 @@
     "email": "john@compassvaletservices.com",
     "status": "in_trial",
     "last_updated": "2026-01-28 07:08:20.158271"
+  },
+  "79742": {
+    "name": "xabier",
+    "email": "xabier@sharpamarketing.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 09:10:21.719266"
+  },
+  "79743": {
+    "name": "Hyan Lee",
+    "email": "hyanlee2000@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 09:10:21.719272"
   }
 }
