@@ -8,13 +8,8 @@ import re
 from datetime import datetime
 
 # --- Configuration ---
-# Base URL for company list (pagination will be appended)
 BASE_URL_TEMPLATE = "https://prisync.me/admin/company/admin/Company_page/{}/Company_sort/id.desc" 
-
-# Local file to store state
 STATE_FILE = 'company_state.json'
-
-# Concurrency settings
 CONCURRENT_REQUESTS = 10
 START_PAGE = 1
 MAX_PAGES_TO_SCRAPE = 200 
@@ -57,6 +52,7 @@ class FileStateManager:
             'name': company_data['name'],
             'email': company_data['email'],
             'status': company_data['status'],
+            'panel_status': company_data['panel_status'], # YENİ: Panel statüsü de kaydediliyor
             'last_updated': str(datetime.now())
         }
 
@@ -87,7 +83,7 @@ class AsyncScraper:
                     return await response.text()
                 elif response.status == 302:
                     logger.warning(f"Page {page_num} redirected. COOKIE MIGHT BE EXPIRED!")
-                    self.stop_signal = True # Stop other workers if cookie invalid
+                    self.stop_signal = True 
                 elif response.status == 404:
                     logger.info(f"Page {page_num} not found. Reached end?")
                 else:
@@ -100,17 +96,17 @@ class AsyncScraper:
         data = []
         try:
             soup = BeautifulSoup(html, 'lxml')
-            # Selector from user providing: #yw1 table.items tbody tr
             rows = soup.select("#yw1 table.items tbody tr")
             
             for row in rows:
                 cols = row.find_all("td")
-                # Based on user HTML:
-                # 0: ID, 1: Name, 2: Email, 7: Company Status
+                # HTML Yapısı:
+                # 0: ID, 1: Name, 2: Email, 6: Panel Status, 7: Company Status
                 if len(cols) >= 8:
                     c_id = cols[0].get_text(strip=True)
                     name = cols[1].get_text(strip=True)
                     email = cols[2].get_text(strip=True)
+                    panel_status = cols[6].get_text(strip=True) # YENİ: Panel Status çekiliyor
                     status = cols[7].get_text(strip=True)
                     
                     if c_id and c_id.isdigit():
@@ -118,6 +114,7 @@ class AsyncScraper:
                             "id": c_id,
                             "name": name,
                             "email": email,
+                            "panel_status": panel_status, # YENİ
                             "status": status
                         })
         except Exception:
@@ -165,46 +162,47 @@ class SlackNotifier:
         self.webhook_url = os.environ.get("SLACK_WEBHOOK")
 
     async def send_notification(self, changes):
-        """
-        changes: list of dicts {'type': 'NEW'|'CHANGE', 'data': ...}
-        """
         if not self.webhook_url or not changes: return
         
         try:
-            # Chunk messages to avoid Slack limit
             chunk_size = 10
             for i in range(0, len(changes), chunk_size):
                 batch = changes[i:i+chunk_size]
                 
                 message_text = "📢 *Prisync Company Updates*\n\n"
                 for item in batch:
+                    # --- MEVCUT: Company Status Change ---
                     if item['type'] == 'CHANGE':
                         c = item['data']
-                        new_status = c['new'].lower() # Küçük harfe çevirip kontrol edelim
+                        new_status = c['new'].lower()
                         
-                        # --- Emoji Mantığı ---
                         if 'paid' in new_status:
-                            status_icon = "🎉 :partying_face:" # Kutlama
+                            status_icon = "🎉 :partying_face:" 
                         elif 'churned' in new_status or 'uninstalled' in new_status:
-                            status_icon = "📉 :cry:" # Üzgün/Kayup
+                            status_icon = "📉 :cry:" 
                         else:
-                            status_icon = "🔄" # Standart değişim
-                        # ---------------------
+                            status_icon = "🔄" 
 
                         message_text += f"{status_icon} *Status Change*: {c['name']} (ID: {c['id']})\n"
                         message_text += f"   ❌ Old: {c['old']}  ➡  ✅ New: *{c['new']}*\n\n"
 
+                    # --- YENİ: Panel Completion Notification ---
+                    elif item['type'] == 'PANEL_COMPLETED':
+                        c = item['data']
+                        message_text += f"🚀 *Panel Installation Complete*: {c['name']} (ID: {c['id']})\n"
+                        message_text += f"   ✅ User has finished the setup wizard!\n\n"
+
+                    # --- MEVCUT: New Company ---
                     elif item['type'] == 'NEW':
                         c = item['data']
-                        # İstersen yeni gelen 'Paid' müşteriler için de buraya benzer mantık ekleyebilirsin
                         message_text += f"✨ *New Company*: {c['name']} (ID: {c['id']})\n"
-                        message_text += f"   Status: {c['status']}\n\n"
+                        message_text += f"   Status: {c['status']} | Panel: {c['panel_status']}\n\n"
                 
                 connector = aiohttp.TCPConnector(ssl=False)
                 async with aiohttp.ClientSession(connector=connector) as session:
                     await session.post(self.webhook_url, json={"text": message_text})
                     logger.info("Slack notification batch sent.")
-                    await asyncio.sleep(1) # Rate limit niceness
+                    await asyncio.sleep(1) 
 
         except Exception as e:
             logger.error(f"Slack error: {e}")
@@ -218,21 +216,25 @@ async def main():
     scraped_data = await scraper.run()
     logger.info(f"Scrape finished. Found {len(scraped_data)} companies.")
     
-    # Process Changes
     changes_to_notify = []
     
-    # sort scraped data by ID
+    # Sort scraped data by ID
     scraped_data.sort(key=lambda x: int(x['id']))
 
     for company in scraped_data:
         c_id = str(company['id'])
         c_name = company['name']
         c_status = company['status']
+        c_panel_status = company['panel_status'] # YENİ
         
-        # Check against local state
         if c_id in state_manager.company_state:
             # Existing company
-            old_status = state_manager.company_state[c_id]['status']
+            old_data = state_manager.company_state[c_id]
+            old_status = old_data['status']
+            # Eski kayıtta panel_status olmayabilir (.get kullanıyoruz)
+            old_panel_status = old_data.get('panel_status') 
+
+            # 1. Kontrol: Company Status Değişimi
             if old_status != c_status:
                 logger.info(f"Status Change Detected for {c_id}: {old_status} -> {c_status}")
                 changes_to_notify.append({
@@ -242,19 +244,26 @@ async def main():
                         'old': old_status, 'new': c_status
                     }
                 })
-                # Update state immediately (in memory)
-                state_manager.update_company(company)
-        else:
-            # New company
+            
+            # 2. Kontrol: Panel Status Değişimi (INCOMPLETE -> COMPLETE)
+            # Sadece eski veri kesin olarak 'INCOMPLETE' ise ve yeni veri 'COMPLETE' ise bildir.
+            if old_panel_status == 'INCOMPLETE' and c_panel_status == 'COMPLETE':
+                logger.info(f"Panel Completed Detected for {c_id}")
+                changes_to_notify.append({
+                    'type': 'PANEL_COMPLETED',
+                    'data': company
+                })
+
             # Update state
             state_manager.update_company(company)
-            # Notify
+        else:
+            # New company
+            state_manager.update_company(company)
             changes_to_notify.append({
                 'type': 'NEW',
                 'data': company
             })
 
-    # Save state to file
     state_manager.save_state()
 
     if changes_to_notify:
