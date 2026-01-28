@@ -8234,14 +8234,14 @@
   "79070": {
     "name": "Moonlight Design",
     "email": "sales@moonlightdesign.co.uk",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634125"
+    "status": "paid",
+    "last_updated": "2026-01-28 13:19:41.143458"
   },
   "79071": {
     "name": "elif daraman",
     "email": "elifdaraman87@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634127"
+    "status": "expired",
+    "last_updated": "2026-01-28 13:19:41.143506"
   },
   "79072": {
     "name": "argent.films",
@@ -12298,5 +12298,47 @@
     "email": "jo@nickrivettsport.co.uk",
     "status": "in_trial",
     "last_updated": "2026-01-28 12:06:54.628394"
+  },
+  "79750": {
+    "name": "fatihmuhammed97",
+    "email": "fatihmuhammed97@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 13:19:41.143921"
+  },
+  "79751": {
+    "name": "Fausto H",
+    "email": "fausto.sti@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 13:19:41.143929"
+  },
+  "79752": {
+    "name": "dunlop-BE",
+    "email": "dunlop-be@dunlopsports.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 13:19:41.143933"
+  },
+  "79753": {
+    "name": "dunlop-it",
+    "email": "dunlop-it@dunlopsports.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 13:19:41.143936"
+  },
+  "79754": {
+    "name": "dunlop-fr",
+    "email": "dunlop-fr@dunlopsports.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 13:19:41.143940"
+  },
+  "79755": {
+    "name": "dunlop-es",
+    "email": "dunlop-es@dunlopsports.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 13:19:41.143943"
+  },
+  "79756": {
+    "name": "dunlop-uk",
+    "email": "dunlop-uk@dunlopsports.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 13:19:41.143946"
   }
 }
