@@ -8174,8 +8174,8 @@
   "79060": {
     "name": "Axel Trompeter",
     "email": "axel.trompeter@gmail.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634089"
+    "status": "expired",
+    "last_updated": "2026-01-28 04:20:29.036094"
   },
   "79061": {
     "name": "mehdi.n",
@@ -12226,5 +12226,11 @@
     "email": "wanggaofan0610@gmail.com",
     "status": "in_trial",
     "last_updated": "2026-01-28 03:33:47.887270"
+  },
+  "79738": {
+    "name": "choobella3",
+    "email": "choobella3@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 04:20:29.036461"
   }
 }
