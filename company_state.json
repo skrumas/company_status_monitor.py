@@ -7214,8 +7214,8 @@
   "78896": {
     "name": "internal-test-btt",
     "email": "internal-test-btt@prisync.com",
-    "status": "test",
-    "last_updated": "2026-01-26 14:16:51.633669"
+    "status": "expired",
+    "last_updated": "2026-01-28 11:06:28.993378"
   },
   "78897": {
     "name": "Aishath Nasreena Abdul Kareem",
@@ -8210,14 +8210,14 @@
   "79066": {
     "name": "gmckeone",
     "email": "gmckeone@govsci.com",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634116"
+    "status": "expired",
+    "last_updated": "2026-01-28 11:06:28.993597"
   },
   "79067": {
     "name": "Martin de Boer",
     "email": "martin.de.boer@corendon.nl",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634118"
+    "status": "expired",
+    "last_updated": "2026-01-28 11:06:28.993630"
   },
   "79068": {
     "name": "ceren'instant-1401",
@@ -12274,5 +12274,17 @@
     "email": "dunlop-de@dunlopsports.com",
     "status": "in_trial",
     "last_updated": "2026-01-28 10:06:24.123636"
+  },
+  "79746": {
+    "name": "i.benekis",
+    "email": "i.benekis@orchestrahellas.gr",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 11:06:28.994286"
+  },
+  "79747": {
+    "name": "Rayen Macbook",
+    "email": "rayenmacbook@gmail.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 11:06:28.994296"
   }
 }
