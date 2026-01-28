@@ -8222,14 +8222,14 @@
   "79068": {
     "name": "ceren'instant-1401",
     "email": "ceren-instan-sendasalink-1401@...",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634120"
+    "status": "expired",
+    "last_updated": "2026-01-28 12:06:54.627898"
   },
   "79069": {
     "name": "prisync",
     "email": "prisync@yagmail.fr",
-    "status": "in_trial",
-    "last_updated": "2026-01-26 14:16:51.634122"
+    "status": "expired",
+    "last_updated": "2026-01-28 12:06:54.627944"
   },
   "79070": {
     "name": "Moonlight Design",
@@ -12286,5 +12286,17 @@
     "email": "rayenmacbook@gmail.com",
     "status": "in_trial",
     "last_updated": "2026-01-28 11:06:28.994296"
+  },
+  "79748": {
+    "name": "riyadh94",
+    "email": "riyadh94@yahoo.com",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 12:06:54.628386"
+  },
+  "79749": {
+    "name": "Nick Rivett Sport",
+    "email": "jo@nickrivettsport.co.uk",
+    "status": "in_trial",
+    "last_updated": "2026-01-28 12:06:54.628394"
   }
 }
